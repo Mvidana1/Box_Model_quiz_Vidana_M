@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"  rel="stylesheet">	
+
+<title>Box Model Layout Quiz</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+<style>
+* {
+  box-sizing: border-box;
+}
+right, main {
+	padding-left:20px;
+	float:right;
+}
+body {
+  margin: 0;
+  background-image: url('image/dot.png');
+}
+	
+/* Style the header */
+.header {
+  background-image: url('image/header_bkg.png');
+  color: #E9C0EC;
+  width: 960px;
+  height: 200px;
+  margin-top: 20px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align:center;
+  font-size: 75px;
+  border-radius: 8px;
+}
+h1{
+	font-family: 'Dancing Script', cursive;
+	}
+	
+/* Style the left navigation  */
+.nav {
+  float: left;
+  background-color: lightcoral;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  margin-left: 300px;
+  margin-right: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+/* Create two columns that floats next to each other */
+.column {
+  float: center;
+}
+
+.columnright-side  {
+  float: left;
+  align-content: center;
+  position: right;
+  left: 30px;
+  background-color: lightgreen;
+  width: 520px;
+  height: 300px;
+  text-align: center;
+  padding: 10px;
+  display: block;
+  margin-left: 20px;
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+	
+.box {
+  margin-top: 10px;
+  display float: right ;
+}
+	
+.article {
+  float: right;
+  padding: 10px;
+  margin-right: 300px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 150px; 
+}
+
+aside {
+  position-parent: relative;
+  width: 95%;
+  height: 120px;
+  padding-left: 10px;
+  margin-left: 10px;
+  float: right;
+  background-color: #1ABCC1;
+}
+
+.div.relative {
+  position: relative;
+  left: 20px;
+}
+
+/* Clear floats after the columns */
+.section:after {
+  content: "";
+  display: table;
+  clear: both;
+	}
+
+/* Style the footer */
+	
+#footer {
+	clear: both;
+	margin-left: 300px;
+    margin-right: 300px;
+	width: 960px;
+	padding: 10px;
+	height: 30px;
+	background-color:#AF9FCB;
+    lign-content:   text-align: left;
+}
+    @media (max-width: 960px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+		
+</style>
+</head>
+<body>
+
+<div class="header">
+	<h1>It's a Girl! </h1>
+</div>
+
+<div class="nav">
+  <a href="#">Link</a>
+</div>
+
+<section>	
+<div class="row">
+	 <div class="columnright-side">
+	<div class="box"></div>
+  <p>&nbsp;</p>
+  <div class="relative">
+		 <aside>
+           <p></p>
+		 </aside> 
+    </div>
+  </div>
+</div>
+</section> 
+	
+ <div id="footer">
+			Copyright &copy; 2014 Northwest Vista College.
+</div>
+
+</body>
+</html>
+
